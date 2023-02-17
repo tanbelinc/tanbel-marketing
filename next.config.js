@@ -1,7 +1,11 @@
 module.exports = {
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+  // i18n: {
+  //   locales: ["en"],
+  //   defaultLocale: "en",
+  // },
+  images: {
+    loader: 'akamai',
+    path: '/',
   },
   target: "serverless",
   webpack: (config, { isServer }) => {
