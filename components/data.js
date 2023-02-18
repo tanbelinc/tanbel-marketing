@@ -13,7 +13,7 @@ import benefitTwoImg from "../public/img/benefit-two.png";
 const benefitOne = {
   title: "Our services",
   desc: "Tanbel has grown into an international contestant in software engineering with wide-ranging expertise in all the areas needed for reliable software development.",
-  image: benefitOneImg,
+  image: "./img/benefit-one.png",
   bullets: [
     {
       title: "Web App Development",
@@ -36,7 +36,7 @@ const benefitOne = {
 const benefitTwo = {
   title: "Benefits you will get",
   desc: "Using deep domain expertise of our software developers, we create impactful digital solutions that drive meaningful change with a strategic vision.",
-  image: benefitTwoImg,
+  image: "./img/benefit-two.png",
   bullets: [
     {
       title: "Mobile Responsive Template",

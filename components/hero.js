@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex mx-auto max-h-[400px] max-w-[400px]">
-          <Image
+          {/* <Image
             src={heroImg}
             width="400"
             height="400"
@@ -37,7 +37,8 @@ export default function Hero() {
             layout="intrinsic"
             loading="eager"
             placeholder="blur"
-          />
+          /> */}
+          <img src="./img/hero.png"/>
         </div>
       </Container>
       <Container>

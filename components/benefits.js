@@ -13,14 +13,15 @@ export default function Benefits(props) {
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}>
           <div>
-            <Image
+            {/* <Image
               src={data.image}
               width="521"
               height="482"
               alt="Benefits"
               layout="intrinsic"
               placeholder="blur"
-            />
+            /> */}
+            <img src={data.image}/>
           </div>
         </div>
 
