@@ -43,15 +43,20 @@ export default function Hero() {
       <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Trusted by <span className="text-indigo-600">2000+</span> customers
-            worldwide
+            Trusted customers <span className="text-indigo-600">worldwide</span>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
+          <div className="flex flex-wrap justify-center items-center gap-5 mt-10 md:justify-around">
+            <img width={200} src="/apps/wecycle.png" />
+            <img width={100} src="/apps/bapa.png" />
+            <img width={200} src="/apps/uoh.png" />
+            {/* <div className="pt-2 text-gray-400 dark:text-gray-400">
               <AmazonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
+            </div> */}
+            {/* <div className="pt-2 text-gray-400 dark:text-gray-400">
+              <AmazonLogo />
+            </div> */}
+            {/* <div className="text-gray-400 dark:text-gray-400">
               <VerizonLogo />
             </div>
             <div className="text-gray-400 dark:text-gray-400">
@@ -62,7 +67,7 @@ export default function Hero() {
             </div>
             <div className="pt-2 text-gray-400 dark:text-gray-400">
               <SonyLogo />
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>

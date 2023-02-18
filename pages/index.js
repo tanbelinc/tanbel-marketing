@@ -2,7 +2,6 @@ import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
-
 import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
@@ -11,18 +10,9 @@ import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
-
-//import dynamic from "next/dynamic";
-
-// const Video = dynamic(() => import("../components/video"));
-
-// const Benefits = dynamic(() => import("../components/benefits"));
-// const Footer = dynamic(() => import("../components/footer"));
-// const Testimonials = dynamic(() => import("../components/testimonials"));
-// const Cta = dynamic(() => import("../components/cta"));
-// const Faq = dynamic(() => import("../components/faq"));
-
-// const PopupWidget = dynamic(() => import("../components/popupWidget"));
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Team from "../components/Team";
 
 export default function Home() {
   return (
@@ -40,26 +30,34 @@ export default function Home() {
       <Hero />
       <SectionTitle
         pretitle="Tanbel Benefits"
-        title=" Why should you deal with Tanbel">
-        Tanbel is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        title=" Why should you deal with Tanbel"
+      >
+        We employ best practice processes and development methodologies as a
+        foundation for rapid building of cutting-edge technology solutions in a
+        structured and methodical way.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
+      <SectionTitle pretitle="Our Team" title="Know our internal power">
+        Tanbel Executive Leadership and Senior Management bring decades of
+        industry experience, a global perspective and a passion for achieving
+        results.
+      </SectionTitle>
+      <Team />
+      <br/>
+      <br/>
       <SectionTitle
         pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don't forget to add one. Just like this.
+        title="Learn how to fullfil your needs"
+      >
+        We are proud to have worked with Wecycle, a leading rental solution
       </SectionTitle>
       <Video />
       <SectionTitle
         pretitle="Testimonials"
-        title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        title="Here's what our customers said"
+      >
+        Tanbel has been helping technology startups, global brands, and Fortune companies create impactful software solutions. Learn why they have chosen us and how we have helped them to change people’s lives.
       </SectionTitle>
       <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
