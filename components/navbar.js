@@ -2,9 +2,23 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 import Logo from "./Logo";
+import { Navigation } from "../constants/Nav";
+import { useRouter } from "next/dist/client/router";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const router = useRouter();
+  const [route, setRoute] = useState("");
+
+  useEffect(() => {
+    setRoute(router.asPath.replace("/#", ""));
+  }, [router.asPath]);
+
+  const isActive = (active) => {
+    if (active === route) {
+      return true;
+    }
+  };
 
   return (
     <div className="w-full top-0 fixed bg-white dark:bg-gray-800 z-50 shadow-primary">
@@ -43,12 +57,18 @@ export default function Navbar() {
 
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
-                    {navigation.map((item, index) => (
-                      <Link key={index} href="/">
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
-                          {item}
-                        </a>
-                      </Link>
+                    {Navigation.Array().map((menu, index) => (
+                        <Link href={`#${menu}`}>
+                          <p
+                            className={`w-full cursor-pointer px-4 py-2 rounded-md focus:outline-none hover:text-indigo-500 ${
+                              isActive(menu)
+                                ? "bg-indigo-100 dark:bg-gray-700 text-indigo-500 dark:text-gray-300"
+                                : "text-gray-500 dark:text-gray-300"
+                            }`}
+                          >
+                            {menu}
+                          </p>
+                        </Link>
                     ))}
                     <Link href="/">
                       <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
@@ -65,12 +85,18 @@ export default function Navbar() {
         {/* menu  */}
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
+            {Navigation.Array().map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
-                <Link href="/">
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+                <Link href={`#${menu}`}>
+                  <p
+                    className={`w-full cursor-pointer px-4 py-2 rounded-md focus:outline-none hover:text-indigo-500 ${
+                      isActive(menu)
+                        ? "bg-indigo-100 dark:bg-gray-700 text-indigo-500 dark:text-gray-300"
+                        : "text-gray-500 dark:text-gray-300"
+                    }`}
+                  >
                     {menu}
-                  </a>
+                  </p>
                 </Link>
               </li>
             ))}

@@ -3,6 +3,7 @@ import React from "react";
 export default function Container(props) {
   return (
     <div
+      id={props.id ? props.id : ""}
       className={`container p-8 mx-auto xl:px-0 ${
         props.className ? props.className : ""
       }`}>

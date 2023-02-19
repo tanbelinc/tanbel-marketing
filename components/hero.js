@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.png";
+import { Navigation } from "../constants/Nav";
 
 export default function Hero() {
   return (
     <>
-      <Container className="flex h-[100vh] max-w-[1300px] mx-auto flex-col-reverse lg:flex-row gap-10 justify-center items-center mt-10">
+      <Container id={Navigation.Object().Home} className="flex h-[100vh] max-w-[1300px] mx-auto flex-col-reverse lg:flex-row gap-10 justify-center items-center mt-10">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
@@ -41,7 +42,7 @@ export default function Hero() {
           <img src="./img/hero.png"/>
         </div>
       </Container>
-      <Container>
+      <Container id={Navigation.Object().Clients}>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
             Trusted customers <span className="text-indigo-600">worldwide</span>
