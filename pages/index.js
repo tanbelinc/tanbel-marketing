@@ -16,7 +16,7 @@ import Team from "../components/Team";
 import { Navigation } from "../constants/Nav";
 
 export default function Home() {
-  const nav = Navigation.Object()
+  const nav = Navigation
   return (
     <>
       <Head>
