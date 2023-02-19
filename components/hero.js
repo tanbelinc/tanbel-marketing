@@ -2,11 +2,15 @@ import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.png";
 import { Navigation } from "../constants/Nav";
+import { products } from "../resources/products";
 
 export default function Hero() {
   return (
     <>
-      <Container id={Navigation.Home} className="flex h-[100vh] max-w-[1300px] mx-auto flex-col-reverse lg:flex-row gap-10 justify-center items-center mt-10">
+      <Container
+        id={Navigation.Home}
+        className="flex h-[100vh] max-w-[1300px] mx-auto flex-col-reverse lg:flex-row gap-10 justify-center items-center mt-10"
+      >
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
@@ -39,7 +43,7 @@ export default function Hero() {
             loading="eager"
             placeholder="blur"
           /> */}
-          <img src="./img/hero.png"/>
+          <img src="./img/hero.png" />
         </div>
       </Container>
       <Container id={Navigation.Clients}>
@@ -49,9 +53,9 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-5 mt-10 md:justify-around">
-            <img width={200} src="./apps/wecycle.png" />
-            <img width={100} src="./apps/bapa.png" />
-            <img width={200} src="./apps/uoh.png" />
+            {products.map((p) => (
+              <img width={p.width} src={p.image} />
+            ))}
             {/* <div className="pt-2 text-gray-400 dark:text-gray-400">
               <AmazonLogo />
             </div> */}

@@ -2,24 +2,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Container from "./container";
 import Slider from "react-slick";
-
-const members = [
-  {
-    name: "Tanvir Ahmed",
-    title: "CEO at Tanbel",
-    image: "./member/Tanvir.png",
-  },
-  {
-    name: "Tamzeed Ahmed",
-    title: "CTO at Tanbel",
-    image: "./member/Tamzeed.png",
-  },
-  {
-    name: "Zahin Afsar",
-    title: "Software Engineer",
-    image: "./member/Zahin.png",
-  },
-];
+import { team } from "../resources/team";
 
 const settings = {
   dots: true,
@@ -41,11 +24,11 @@ export default function Team() {
       const windowSize = window.innerWidth;
       const groupSize = windowSize > 900 ? 3 : 1;
       const groupedArr = [];
-      for (let i = 0; i < members.length; i += groupSize) {
-        const newArr = members.slice(i, i + groupSize);
+      for (let i = 0; i < team.length; i += groupSize) {
+        const newArr = team.slice(i, i + groupSize);
         const newArrLength = newArr.length;
         if (newArrLength < groupSize) {
-          const extraArr = members.slice(0, groupSize - newArrLength);
+          const extraArr = team.slice(0, groupSize - newArrLength);
           groupedArr.push([...newArr, ...extraArr]);
         } else {
           groupedArr.push(newArr);
