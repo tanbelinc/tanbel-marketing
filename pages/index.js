@@ -14,9 +14,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Team from "../components/Team";
 import { Navigation } from "../constants/Nav";
+import Pricing from "../components/pricing";
 
 export default function Home() {
-  const nav = Navigation
+  const nav = Navigation;
   return (
     <>
       <Head>
@@ -42,14 +43,17 @@ export default function Home() {
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
-        id={nav.Team} pretitle="Our Team" title="Know our internal power">
+        id={nav.Team}
+        pretitle="Our Team"
+        title="Know our internal power"
+      >
         Tanbel Executive Leadership and Senior Management bring decades of
         industry experience, a global perspective and a passion for achieving
         results.
       </SectionTitle>
       <Team />
-      <br/>
-      <br/>
+      <br />
+      <br />
       <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"
@@ -58,15 +62,29 @@ export default function Home() {
       </SectionTitle>
       <Video />
       <SectionTitle
+        id={nav.Pricing}
+        pretitle="Pricing"
+        title="How Tanbel cost you?"
+      >
+        Here at Flowbite we focus on markets where technology, innovation, and
+        capital can unlock long-term value and drive economic growth.
+      </SectionTitle>
+      <Pricing />
+      <SectionTitle
         id={nav.Review}
         pretitle="Testimonials"
         title="Here's what our customers said"
       >
-        Tanbel has been helping technology startups, global brands, and Fortune companies create impactful software solutions. Learn why they have chosen us and how we have helped them to change people’s lives.
+        Tanbel has been helping technology startups, global brands, and Fortune
+        companies create impactful software solutions. Learn why they have
+        chosen us and how we have helped them to change people’s lives.
       </SectionTitle>
       <Testimonials />
       <SectionTitle
-        id={nav.FAQ} pretitle="FAQ" title="Frequently Asked Questions">
+        id={nav.FAQ}
+        pretitle="FAQ"
+        title="Frequently Asked Questions"
+      >
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
       </SectionTitle>

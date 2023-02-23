@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     boxShadow: {
       primary: "0 1px 12px 6px #5046e512",
+      basic: "0px 3px 11px 3px #f5f5f5fc",
+      none: "none",
     },
     // colors: {
     // },
