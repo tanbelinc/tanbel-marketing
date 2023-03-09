@@ -54,7 +54,9 @@ export default function Hero() {
 
           <div className="flex flex-wrap justify-center items-center gap-5 mt-10 md:justify-around">
             {products.map((p) => (
-              <img width={p.width} src={p.image} />
+              <a target="_blank" href={p.link}>
+                <img width={p.width} src={p.image} />
+              </a>
             ))}
             {/* <div className="pt-2 text-gray-400 dark:text-gray-400">
               <AmazonLogo />

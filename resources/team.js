@@ -1,16 +1,16 @@
 export const team = [
   {
-    name: "Tanvir Ahmed",
+    name: "Tanvir",
     title: "CEO at Tanbel",
     image: "./member/Tanvir.png",
   },
   {
-    name: "Tamzeed Ahmed",
+    name: "Kamruzzaman (PhD)",
     title: "CTO at Tanbel",
-    image: "./member/Tamzeed.png",
+    image: "./member/Kamruzzaman.png",
   },
   {
-    name: "Zahin Afsar",
+    name: "Zahin",
     title: "Software Engineer",
     image: "./member/Zahin.png",
   },
