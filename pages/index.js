@@ -33,12 +33,13 @@ export default function Home() {
       <Hero />
       <SectionTitle
         id={nav.Services}
-        pretitle="Tanbel Benefits"
-        title=" Why should you deal with Tanbel"
+        pretitle="At a glance"
+        title="Why Tanbel?"
       >
-        We employ best practice processes and development methodologies as a
-        foundation for rapid building of cutting-edge technology solutions in a
-        structured and methodical way.
+        Our products are both affordable and high-quality, produced through the
+        implementation of leading-edge techniques and development methodologies
+        that facilitate efficient and structured production of advanced
+        technological solutions.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
@@ -54,7 +55,7 @@ export default function Home() {
       <Team />
       <br />
       <br />
-      <SectionTitle
+      {/* <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"
       >
@@ -88,10 +89,10 @@ export default function Home() {
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
       </SectionTitle>
-      <Faq />
+      <Faq /> */}
       <Cta />
       <Footer />
-      <PopupWidget />
+      {/* <PopupWidget /> */}
     </>
   );
 }

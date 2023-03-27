@@ -46,12 +46,17 @@ export default function Team() {
       <Slider {...settings}>
         {data.map((group, i1) => (
           <div>
-            <div className="flex justify-center">
+            <div className="flex justify-center items-start">
               {group.map((data, i2) => (
-                <div className="mx-3 flex-col justify-center px-14">
-                  <img width={200} src={data.image} className="mb-4"/>
-                  <p className="text-center text-xl font-bold text-primary">{data.name}</p>
+                <div className="mx-3 flex items-center flex-col justify-center px-14">
+                  <img width={200} src={data.image} className="mb-4" />
+                  <p className="text-center text-xl font-bold text-primary">
+                    {data.name}
+                  </p>
                   <p className="text-center">{data.title}</p>
+                  {data.description?.map((d, i) => (
+                    <p className="text-center">{d}</p>
+                  ))}
                 </div>
               ))}
             </div>

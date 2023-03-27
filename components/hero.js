@@ -9,7 +9,7 @@ export default function Hero() {
     <>
       <Container
         id={Navigation.Home}
-        className="flex h-[100vh] max-w-[1300px] mx-auto flex-col-reverse lg:flex-row gap-10 justify-center items-center mt-10"
+        className="flex h-[100vh] px-20 max-w-[1300px] mx-auto flex-col-reverse lg:flex-row gap-10 justify-center items-center mt-10"
       >
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
@@ -17,8 +17,7 @@ export default function Hero() {
               We are <span className="text-primary">Tanbel</span>
             </h1>
             <p className="pt-2 pb-10 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Designers, developers and dreamers. We design, develop and test
-              mobile and web apps. Research new ideas and technologies.
+              Your implementation partner
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
@@ -33,7 +32,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex mx-auto max-h-[400px] max-w-[400px]">
+        <div className="flex mx-auto max-h-[450px] max-w-[450px]">
           {/* <Image
             src={heroImg}
             width="400"
@@ -49,7 +48,7 @@ export default function Hero() {
       <Container id={Navigation.Clients}>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Our top selling products <span className="text-indigo-600">worldwide</span>
+            Product we implemented
           </div>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10">
@@ -68,7 +67,7 @@ const TeamCard = ({ children, link }) => {
     <a
       target="_blank"
       href={link}
-      className="cursor-pointer w-full md:w-[250px] h-[200px] flex justify-center items-center text-3xl font-extrabold dark:bg-gray-800 text-primary rounded-md p-5 shadow-primary border-t-2 border-primary"
+      className="cursor-pointer w-full md:w-[250px] h-[200px] flex justify-center items-center text-3xl font-extrabold dark:bg-gray-800 text-primary hover:text-green-600 rounded-md p-5 shadow-primary border-t-2 hover:border-t-4 border-primary hover:border-green-600"
     >
       {children}
     </a>

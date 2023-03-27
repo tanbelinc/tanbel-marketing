@@ -3,8 +3,8 @@ export const Navigation = {
   Clients: "Clients",
   Services: "Services",
   Team: "Team",
-  Pricing: "Pricing",
-  Review: "Review",
-  FAQ: "FAQ",
+  // Pricing: "Pricing",
+  // Review: "Review",
+  // FAQ: "FAQ",
   Contact: "Contact",
 };

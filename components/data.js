@@ -39,18 +39,18 @@ const benefitTwo = {
   image: "./img/benefit-two.png",
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "We deliver a device responsive software for your system.",
+      title: "Modern and clean design",
+      desc: "Aesthetic and functional aspects of a software application or website that follow contemporary design principles.",
       icon: <DeviceMobileIcon />,
     },
     {
-      title: "Accessibility",
-      desc: "Full access to the client during the development process.",
+      title: "Complete ownership of the codebase",
+      desc: "Ability to fully control and modify the source code of a software application or website, without any external constraints or limitations.",
       icon: <AdjustmentsIcon />,
     },
     {
-      title: "Modern and Clean Design",
-      desc: "We offers a modern and clean design for your system.",
+      title: "Extensive production level support",
+      desc: "Ongoing maintenance, updates, and technical assistance will be provided to ensure the optimal performance, security, and scalability",
       icon: <SunIcon />,
     },
   ],

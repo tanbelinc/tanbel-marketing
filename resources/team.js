@@ -5,8 +5,9 @@ export const team = [
     image: "./member/Tanvir.png",
   },
   {
-    name: "Kamruzzaman (PhD)",
+    name: "Kamruzzaman",
     title: "CTO at Tanbel",
+    description: ["PhD, Kansas State University (AI)", "Advisor"],
     image: "./member/Kamruzzaman.png",
   },
   {
