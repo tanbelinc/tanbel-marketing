@@ -15,20 +15,26 @@ const benefitOne = {
   desc: "Tanbel has grown into an international contestant in software engineering with wide-ranging expertise in all the areas needed for reliable software development.",
   image: "./img/benefit-one.png",
   bullets: [
+    // ecommerce, non- profit organization, e-commerce, marketplace, ed-tech and property management
     {
-      title: "Web App Development",
-      desc: "We have a proven track record of delivering web apps.",
+      title: "E-commerce",
       icon: <CursorClickIcon />,
     },
     {
-      title: "Mobile App Development",
-      desc: "We use latest technologies to build mobile apps.",
+      title: "Non-profit Organization",
       icon: <DeviceMobileIcon />,
     },
     {
-      title: "Analytical Solutions",
-      desc: "We are working with big data for data Analytics.",
+      title: "Marketplace",
       icon: <ChartSquareBarIcon />,
+    },
+    {
+      title: "Education Technology",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Property Management",
+      icon: <AdjustmentsIcon />,
     },
   ],
 };

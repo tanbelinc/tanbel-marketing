@@ -6,8 +6,8 @@ export const team = [
   },
   {
     name: "Kamruzzaman",
-    title: "CTO at Tanbel",
-    description: ["PhD, Kansas State University (AI)", "Advisor"],
+    title: "Advisor at Tanbel",
+    description: ["PhD, Kansas State University (AI)"],
     image: "./member/Kamruzzaman.png",
   },
   {
