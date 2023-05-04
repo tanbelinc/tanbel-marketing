@@ -73,11 +73,12 @@ export default function Navbar() {
                         </p>
                       </Link>
                     ))}
-                    <Link href="/">
-                      <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
-                        Get Started
-                      </a>
-                    </Link>
+                    <a
+                      href="https://wecycle.io/contacts"
+                      className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                    >
+                      Get Started
+                    </a>
                   </>
                 </Disclosure.Panel>
               </div>
@@ -107,12 +108,9 @@ export default function Navbar() {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/">
-            <a className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
+            <a href="https://wecycle.io/contacts" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
               Get Started
             </a>
-          </Link>
-
           <ThemeChanger />
         </div>
       </nav>

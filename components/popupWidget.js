@@ -17,35 +17,6 @@ export default function PopupWidget() {
 
   const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
 
-  const onSubmit = async (data, e) => {
-    console.log(data);
-    await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(data, null, 2),
-    })
-      .then(async (response) => {
-        let json = await response.json();
-        if (json.success) {
-          setIsSuccess(true);
-          setMessage(json.message);
-          e.target.reset();
-          reset();
-        } else {
-          setIsSuccess(false);
-          setMessage(json.message);
-        }
-      })
-      .catch((error) => {
-        setIsSuccess(false);
-        setMessage("Client Error. Please check the console.log for more info");
-        console.log(error);
-      });
-  };
-
   return (
     <div>
       <Disclosure>
@@ -113,7 +84,7 @@ export default function PopupWidget() {
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
                   {!isSubmitSuccessful && (
-                    <form onSubmit={handleSubmit(onSubmit)} noValidate>
+                    <form noValidate>
                       <input
                         type="hidden"
                         value="YOUR_ACCESS_KEY_HERE"
@@ -252,11 +223,11 @@ export default function PopupWidget() {
                         <span>
                           Powered by{" "}
                           <a
-                            href="https://Web3Forms.com"
+                            href="https://tanbel.io"
                             className="text-gray-600"
                             target="_blank"
                             rel="noopener noreferrer">
-                            Web3Forms
+                            Tanbel
                           </a>
                         </span>
                       </p>

@@ -42,7 +42,11 @@ export default function Pricing() {
                       </li>
                     ))}
                 </ul>
-                <Button>
+                <Button
+                  onClick={() => {
+                    window.location.href = "https://wecycle.io/contacts";
+                  }}
+                >
                   Get Started
                 </Button>
                 {/* <a
