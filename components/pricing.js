@@ -44,7 +44,7 @@ export default function Pricing() {
                 </ul>
                 <Button
                   onClick={() => {
-                    window.location.href = "https://wecycle.io/contacts";
+                    window.location.href = "/contact";
                   }}
                 >
                   Get Started

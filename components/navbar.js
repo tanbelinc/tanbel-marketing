@@ -61,7 +61,7 @@ export default function Navbar() {
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
                     {navigation.map((menu, index) => (
-                      <Link href={`#${menu}`}>
+                      <Link href={`/#${menu}`}>
                         <p
                           className={`w-full cursor-pointer px-4 py-2 rounded-md focus:outline-none hover:text-indigo-500 ${
                             isActive(menu)
@@ -74,7 +74,7 @@ export default function Navbar() {
                       </Link>
                     ))}
                     <a
-                      href="https://wecycle.io/contacts"
+                      href="/contact"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                     >
                       Get Started
@@ -91,7 +91,7 @@ export default function Navbar() {
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
-                <Link href={`#${menu}`}>
+                <Link href={`/#${menu}`}>
                   <p
                     className={`w-full cursor-pointer px-4 py-2 rounded-md focus:outline-none hover:text-indigo-500 ${
                       isActive(menu)
@@ -108,7 +108,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-            <a href="https://wecycle.io/contacts" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
+            <a href="/contact" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
               Get Started
             </a>
           <ThemeChanger />
