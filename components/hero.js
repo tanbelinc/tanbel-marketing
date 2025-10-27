@@ -31,7 +31,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex mx-auto max-h-[450px] max-w-[450px]">
+        <div className="flex mx-auto max-h-[500px] max-w-[500px]">
           {/* <Image
             src={heroImg}
             width="400"
@@ -66,7 +66,7 @@ const TeamCard = ({ children, link }) => {
     <a
       target="_blank"
       href={link}
-      className="cursor-pointer w-full md:w-[250px] h-[200px] flex justify-center items-center text-3xl font-extrabold dark:bg-gray-800 text-primary hover:text-green-600 rounded-md p-5 shadow-primary border-t-2 hover:border-t-4 border-primary hover:border-green-600"
+      className="cursor-pointer w-full md:w-[300px] h-[200px] flex justify-center items-center text-3xl font-extrabold dark:bg-gray-800 text-primary hover:text-green-600 rounded-md p-5 shadow-primary border-t-2 hover:border-t-4 border-primary hover:border-green-600"
     >
       {children}
     </a>
