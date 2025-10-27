@@ -1,18 +1,18 @@
 export const team = [
   {
-    name: "Tanvir",
-    title: "CEO at Tanbel",
-    image: "./member/Tanvir.png",
+    name: "T. Chowdhury",
+    title: "CEO & Founder",
+    image: "/member/t.chowdhury.jpg",
+  },
+  {
+    name: "Jubayer Al Mamun",
+    title: "Software Engineer",
+    image: "./member/jubayer.png",
   },
   {
     name: "Kamruzzaman",
-    title: "Advisor at Tanbel",
+    title: "Advisor",
     description: ["PhD, Kansas State University (AI)"],
     image: "./member/Kamruzzaman.png",
-  },
-  {
-    name: "Zahin",
-    title: "Software Engineer",
-    image: "./member/Zahin.png",
   },
 ];

@@ -19,7 +19,7 @@ export default function Home() {
         <title>Tanbel Inc.</title>
         <meta
           name="description"
-          content="Tanbel is a free landing page template built with next.js & Tailwind CSS"
+          content="Tanbel is a software development company that specializes in delivering high-quality, innovative solutions to businesses worldwide."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -41,7 +41,7 @@ export default function Home() {
       <SectionTitle
         id={nav.Team}
         pretitle="Our Team"
-        title="Know our internal power"
+        title="Know Our Internal Power"
       >
         Tanbel Executive Leadership and Senior Management bring decades of
         industry experience, a global perspective and a passion for achieving

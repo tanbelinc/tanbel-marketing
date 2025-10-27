@@ -49,7 +49,11 @@ export default function Team() {
             <div className="flex justify-center items-start">
               {group.map((data, i2) => (
                 <div className="mx-3 flex items-center flex-col justify-center px-14">
-                  <img width={200} src={data.image} className="mb-4" />
+                  <img
+                    width={200}
+                    src={data.image}
+                    className="mb-4 rounded-full"
+                  />
                   <p className="text-center text-xl font-bold text-primary">
                     {data.name}
                   </p>
